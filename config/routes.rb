@@ -1,9 +1,46 @@
 Rails.application.routes.draw do
+  namespace :admin do
+  get 'manage/top'
+  end
+
+  namespace :admin do
+  get 'manage/manage_users'
+  end
+
+  namespace :admin do
+  get 'manage/manage_clients'
+  end
+
+  namespace :admin do
+  get 'manage/manage_accounts'
+  end
+
+  namespace :admin do
+  get 'manage/top'
+  end
+
+  namespace :admin do
+  get 'manage/manageUsers'
+  end
+
+  namespace :admin do
+  get 'manage/manage_clients'
+  end
+
+  namespace :admin do
+  get 'manage/manageaccounts'
+  end
+
+  get 'page/list'
+
+  get 'page/table'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  get 'helloworld/index'
   get 'helloworld/hello'
   
   # Example of regular route:
