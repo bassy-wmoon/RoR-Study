@@ -1,2 +1,11 @@
 <h1>Admin::Manage#manage_accounts</h1>
 <p>Find me in app/views/admin/manage/manage_accounts.html.erb</p>
+
+<% @accounts.each do |account| %>
+account : <%= account.account %>, password : <%= account.password %>
+<% end %>
+
+<br>
+-----
+<br>
+<%= @testAccount.account %>

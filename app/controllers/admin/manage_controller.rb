@@ -9,5 +9,11 @@ class Admin::ManageController < ApplicationController
   end
 
   def manage_accounts
+    # 全取得
+    @accounts = Account.all
+    
+    # 1件取得
+    @testAccount = Account.find_by_account("test1")
+    
   end
 end
