@@ -32,7 +32,8 @@ Rails.application.routes.draw do
   end
 
   namespace :api do
-    get 'helloworld/hello'
+    get 'helloworld/helloJson'
+    get 'helloworld/helloXml'
   end
 
   get 'page/list'
