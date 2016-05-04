@@ -1,5 +1,6 @@
 class Admin::ManageController < ApplicationController
   def top
+    render :layout => 'admin/manage_top'
   end
 
   def manage_users
