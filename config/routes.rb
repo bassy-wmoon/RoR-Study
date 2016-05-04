@@ -1,43 +1,15 @@
 Rails.application.routes.draw do
   namespace :page do
+  get 'login/index'
   get 'top/index'
   get 'top/show'
   end
 
-  namespace :page do
-  get 'login/index'
-  end
-
   namespace :admin do
-  get 'manage/top'
-  end
-
-  namespace :admin do
-  get 'manage/manage_users'
-  end
-
-  namespace :admin do
-  get 'manage/manage_clients'
-  end
-
-  namespace :admin do
-  get 'manage/manage_accounts'
-  end
-
-  namespace :admin do
-  get 'manage/top'
-  end
-
-  namespace :admin do
-  get 'manage/manageUsers'
-  end
-
-  namespace :admin do
-  get 'manage/manage_clients'
-  end
-
-  namespace :admin do
-  get 'manage/manageaccounts'
+    get 'manage/top'
+    get 'manage/manage_users'
+    get 'manage/manage_clients'
+    get 'manage/manage_accounts'
   end
 
   namespace :api do
@@ -46,7 +18,6 @@ Rails.application.routes.draw do
   end
 
   get 'page/list'
-
   get 'page/table'
 
   # The priority is based upon order of creation: first created -> highest priority.
