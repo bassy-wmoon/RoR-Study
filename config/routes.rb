@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  namespace :page do
+  get 'top/index'
+  get 'top/show'
+  end
+
+  namespace :page do
+  get 'login/index'
+  end
+
   namespace :admin do
   get 'manage/top'
   end
@@ -44,7 +53,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  match 'login' => 'page/login#index', :via => :get
+  root 'page/login#index'
   get 'helloworld/index'
   get 'helloworld/hello'
   
