@@ -31,6 +31,10 @@ Rails.application.routes.draw do
   get 'manage/manageaccounts'
   end
 
+  namespace :api do
+    get 'helloworld/hello'
+  end
+
   get 'page/list'
 
   get 'page/table'
