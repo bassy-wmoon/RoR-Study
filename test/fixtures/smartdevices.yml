@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  device_kind: MyString
+  device_model: MyString
+  buy_date: 2016-06-06
+  ammount: 1
+
+two:
+  device_kind: MyString
+  device_model: MyString
+  buy_date: 2016-06-06
+  ammount: 1

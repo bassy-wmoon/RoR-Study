@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Smartdevices</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Device kind</th>
+      <th>Device model</th>
+      <th>Buy date</th>
+      <th>Ammount</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @smartdevices.each do |smartdevice| %>
+      <tr>
+        <td><%= smartdevice.device_kind %></td>
+        <td><%= smartdevice.device_model %></td>
+        <td><%= smartdevice.buy_date %></td>
+        <td><%= smartdevice.ammount %></td>
+        <td><%= link_to 'Show', smartdevice %></td>
+        <td><%= link_to 'Edit', edit_smartdevice_path(smartdevice) %></td>
+        <td><%= link_to 'Destroy', smartdevice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Smartdevice', new_smartdevice_path %>

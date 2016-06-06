@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Device kind:</strong>
+  <%= @smartdevice.device_kind %>
+</p>
+
+<p>
+  <strong>Device model:</strong>
+  <%= @smartdevice.device_model %>
+</p>
+
+<p>
+  <strong>Buy date:</strong>
+  <%= @smartdevice.buy_date %>
+</p>
+
+<p>
+  <strong>Ammount:</strong>
+  <%= @smartdevice.ammount %>
+</p>
+
+<%= link_to 'Edit', edit_smartdevice_path(@smartdevice) %> |
+<%= link_to 'Back', smartdevices_path %>

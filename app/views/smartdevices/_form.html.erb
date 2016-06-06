@@ -1,0 +1,33 @@
+<%= form_for(@smartdevice) do |f| %>
+  <% if @smartdevice.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@smartdevice.errors.count, "error") %> prohibited this smartdevice from being saved:</h2>
+
+      <ul>
+      <% @smartdevice.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :device_kind %><br>
+    <%= f.text_field :device_kind %>
+  </div>
+  <div class="field">
+    <%= f.label :device_model %><br>
+    <%= f.text_field :device_model %>
+  </div>
+  <div class="field">
+    <%= f.label :buy_date %><br>
+    <%= f.date_select :buy_date %>
+  </div>
+  <div class="field">
+    <%= f.label :ammount %><br>
+    <%= f.number_field :ammount %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
