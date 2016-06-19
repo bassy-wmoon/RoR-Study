@@ -29,6 +29,12 @@ Rails.application.routes.draw do
   root 'page/login#index'
   get 'helloworld/index'
   get 'helloworld/hello'
+  get 'helloworld/hello1'
+  get 'helloworld/hello2'
+  get 'helloworld/hello3'
+  get 'helloworld/nothing'
+  get 'helloworld/json'
+  get 'helloworld/xml'
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
