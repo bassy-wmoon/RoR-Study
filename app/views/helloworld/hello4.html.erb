@@ -1,0 +1,29 @@
+<h1>hello4.html.erbです</h1>
+
+<div>
+	<%= $msg %>
+</div>
+
+<%= form_tag "/helloworld/hello4", method: "POST", id: "hello4Form", class: "form_class", remote: true do %>
+<div>
+	<%= text_field_tag "hello4", @hello4, maxlength: 200, id: "id_hello4", placeholder: "入力してください", class: "hello4" %>
+</div>
+<div>	
+	<%= password_field_tag "hello4Password", @hello4pass, maxlength: 200, id: "pass_hello4", placeholder: "入力してください", class: "hello4" %>
+</div>
+<div>
+	<%= check_box_tag "hello4chk" %>hello
+	<%= check_box_tag "hello4chk" %>hello1
+	<%= check_box_tag "hello4chk" %>hello2
+	<%= check_box_tag "hello4chk" %>hello3
+	<%= check_box_tag "hello4chk" %>hello4
+</div>
+
+
+
+	<%= submit_tag "送信", confirm: "送信しますか？", id: "hello4_submit" %> 
+<% end %>
+<div>
+	<%= $helloworld %>
+</div>
+

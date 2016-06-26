@@ -32,6 +32,8 @@ Rails.application.routes.draw do
   get 'helloworld/hello1'
   get 'helloworld/hello2'
   get 'helloworld/hello3'
+  get 'helloworld/hello4'
+  post 'helloworld/hello4'
   get 'helloworld/nothing'
   get 'helloworld/json'
   get 'helloworld/xml'

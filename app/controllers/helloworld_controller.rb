@@ -35,5 +35,8 @@ class HelloworldController < ApplicationController
     render action: "hello1", layout: "admin/manage"
   end
   
+  def hello4
+    $msg = "Nice to meet you !"
+  end
 end
 
